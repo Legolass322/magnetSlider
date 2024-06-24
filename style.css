@@ -1,0 +1,92 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.user-blocked {
+  user-select: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.root {
+  padding: 200px 50px;
+  background-color: rgb(57, 112, 112);
+}
+
+.input {  
+  padding: 16px;
+  background-color: aqua;
+
+  cursor: pointer;
+}
+
+.input_slider {
+  position: relative;
+  
+  height: 32px;
+}
+
+.input_thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+
+  
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+}
+
+.input_track-container {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  overflow: hidden;
+  
+  width: 100%;
+  height: 14px;
+}
+  
+.input_track {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+
+.input_progress-container {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 24px;
+}
+
+.input_progress {
+  background-color: #e7e7e7;
+  width: 100%;
+  height: 100%;
+}
+
+.input_options {
+  position: relative;
+}
+
+.input_options > span {
+  display: inline-block;
+}
+
+.input_options .active {
+  color: red
+}
